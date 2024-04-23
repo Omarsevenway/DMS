@@ -1,0 +1,16 @@
+<nb-card class="card" >
+  <nb-card-body>
+    <div class="space space-component3">
+      <div class="space space-component">
+        <nb-icon *ngIf="critical" class="icon danger" icon="alert-triangle"></nb-icon>
+        <nb-icon *ngIf="!critical" class="icon warning" icon="alert-triangle"></nb-icon>
+      </div>
+      <div class="space space-component1">
+        <h5 class="heading text-basic">{{val}}</h5>
+      </div>
+      <div class="space space-component2">
+        <span class="text text-hint caption-2">{{label}}</span>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

@@ -1,0 +1,81 @@
+<div class="space space-component20">
+  <div class="space space-component2">
+    <div class="space space-component">
+      <h5 class="heading text-basic">Analytics</h5>
+      <div class="divider"></div>
+      <nb-select class="select size-xl-medium" placeholder="Choose quarter" status="basic">
+        <nb-option value="1">2020 Q2</nb-option>
+        <nb-option value="2">2020 Q1</nb-option>
+        <nb-option value="3">2019 Q4</nb-option>
+      </nb-select>
+
+      <input [nbDatepicker]="datepicker21" nbInput class="datepicker size-xl-medium"
+             placeholder="dd/mm/yyyy - dd/mm/yyyy" shape="rectangle" status="basic">
+      <nb-rangepicker #datepicker21></nb-rangepicker>
+
+    </div>
+    <div class="space space-component1">
+      <button nbButton class="button size-xl-medium" appearance="outline" status="basic">
+        <nb-icon class="icon btn-icon" icon="layout"></nb-icon>
+        <span>widgets</span>
+      </button>
+      <button nbButton class="button1 size-xl-medium" appearance="outline" status="basic">
+        <nb-icon class="icon btn-icon" icon="expand"></nb-icon>
+        <span>Button</span>
+      </button>
+    </div>
+  </div>
+  <div class="space space-component19">
+    <div class="space space-component15">
+      <nb-card class="general-info-container">
+          <div class="space space-component3">
+            <h5 class="heading1 text-basic">$124,000</h5>
+            <span class="text text-hint caption">Total Expenses</span>
+          </div>
+          <div class="space icon-space">
+            <nb-icon class="icon primary basic" icon="credit-card-outline"></nb-icon>
+          </div>
+      </nb-card>
+      <nb-card class="general-info-container">
+          <div class="space space-component6">
+            <h5 class="heading2 text-basic">$124,000</h5>
+            <span class="text1 text-hint caption">Profit</span>
+          </div>
+          <div class="space icon-space">
+            <nb-icon class="icon primary basic" icon="trending-up"></nb-icon>
+          </div>
+      </nb-card>
+      <nb-card class="general-info-container">
+          <div class="space space-component9">
+            <h5 class="heading3 text-basic">$100,000</h5>
+            <span class="text2 text-hint caption">Revenue</span>
+          </div>
+          <div class="space icon-space">
+            <nb-icon class="icon primary basic" icon="briefcase-outline"></nb-icon>
+          </div>
+      </nb-card>
+      <nb-card class="general-info-container">
+          <div class="space space-component12">
+            <h5 class="heading4 text-basic">300,000K</h5>
+            <span class="text3 text-hint caption">Labour Hours</span>
+          </div>
+          <div class="space icon-space">
+            <nb-icon class="icon primary basic" icon="clock-outline"></nb-icon>
+          </div>
+      </nb-card>
+    </div>
+    <div class="space space-component16">
+      <app-revenue1></app-revenue1>
+      <app-expenses1></app-expenses1>
+    </div>
+    <div class="space space-component17">
+      <app-emission1></app-emission1>
+      <app-trips-performance1></app-trips-performance1>
+    </div>
+    <div class="space space-component18">
+      <app-idle-cost1></app-idle-cost1>
+      <app-fuel-cost1></app-fuel-cost1>
+      <app-driving-distance1></app-driving-distance1>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+<nb-card class="card" >
+  <nb-card-header>
+    <div class="space space-component2">
+      <div class="space space-component">
+        <h6 class="heading text-basic">{{this.vehicle.name}}</h6>
+        <span class="text text-hint caption-2">{{this.vehicle.type}}</span>
+      </div>
+      <div class="space space-component1">
+        <span class="text1 text-danger caption-2">{{this.vehicle.status}}</span>
+      </div>
+    </div>
+  </nb-card-header>
+
+  <nb-card-body>
+    <div class="space space-component11">
+      <div class="space space-component3">
+        <condition-indicator [vehicle]="this.vehicle"></condition-indicator>
+        <errors-indicator [vehicle]="this.vehicle"></errors-indicator>
+        <average-speed class="indicator"></average-speed>
+        <fuel-consumption class="indicator"></fuel-consumption>
+      </div>
+      <div *ngIf="fuelProblem || engineAlert" class="space space-component4">
+        <div class="divider"></div>
+      </div>
+      <div *ngIf="engineAlert" class="space space-component7">
+        <div class="space space-component5">
+          <nb-icon class="icon danger" icon="alert-triangle"></nb-icon>
+        </div>
+        <div class="space space-component6">
+          <span class="text2 text-danger caption-2">Engine critical state</span>
+          <span class="text3 text-danger caption">Please check fuel pump</span>
+        </div>
+      </div>
+      <div *ngIf="batteryAlert" class="space space-component7">
+        <div class="space space-component5">
+          <nb-icon class="icon danger" icon="alert-triangle"></nb-icon>
+        </div>
+        <div class="space space-component6">
+          <span class="text2 text-danger caption-2">Low battery</span>
+          <span class="text3 text-danger caption">Please recharge battery</span>
+        </div>
+      </div>
+      <div *ngIf="fuelProblem" class="space space-component10">
+        <div class="space space-component8">
+          <nb-icon class="icon1 danger" icon="alert-triangle"></nb-icon>
+        </div>
+        <div class="space space-component9">
+          <span class="text4 text-danger caption-2">Critical fuel level</span>
+          <span class="text5 text-danger caption">Please refuel</span>
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+
+  <nb-card-footer>
+    <div class="space space-component14">
+      <div class="space space-component12">
+        <button nbButton class="button size-xl-medium" appearance="filled" status="basic">
+          <nb-icon class="icon btn-icon" icon="star"></nb-icon>
+          <span>ALL EVENTS</span>
+        </button>
+      </div>
+      <div class="space space-component13">
+        <button nbButton class="button1 size-xl-medium" appearance="filled" status="basic">
+          <nb-icon class="icon btn-icon" icon="star"></nb-icon>
+          <span>TRIP</span>
+        </button>
+      </div>
+    </div>
+  </nb-card-footer>
+</nb-card>

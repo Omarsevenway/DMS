@@ -1,0 +1,18 @@
+<nb-card class="card" >
+  <nb-card-body>
+    <div *ngIf="this.isCritical()" class="space space-component">
+      <span class="text text-hint caption">Vehicle Condition</span>
+      <span class="text1 text-danger subtitle-2">Critical</span>
+    </div>
+
+    <div *ngIf="this.isGood()" class="space space-component">
+      <span class="text text-hint caption">Vehicle Condition</span>
+      <span class="text1 text-success subtitle-2">Good</span>
+    </div>
+
+    <div *ngIf="this.isSatisfactory()" class="space space-component">
+      <span class="text text-hint caption">Vehicle Condition</span>
+      <span class="text1 text-warning subtitle-2">Satisfactory</span>
+    </div>
+  </nb-card-body>
+</nb-card>

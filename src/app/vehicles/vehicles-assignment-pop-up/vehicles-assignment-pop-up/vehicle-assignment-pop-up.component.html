@@ -1,0 +1,52 @@
+<nb-card class="card" >
+  <nb-card-header>
+    <div class="space space-component">
+      <h6 class="heading text-basic">Assign Driver</h6>
+      <nb-icon class="pointer icon hint" icon="close-outline" (click)="action()"></nb-icon>
+    </div>
+  </nb-card-header>
+
+  <nb-card-body>
+    <div class="space space-component5">
+      <div class="space space-component1">
+        <label class="text text-hint label">SELECT DRIVER</label>
+        <nb-select class="select size-xl-medium" placeholder="select" status="basic">
+            <nb-option *ngFor="let driver of this.driversService.getDrivers()" [value]=driver.name>
+              {{driver.name + ' ' + driver.surname}}
+            </nb-option>
+        </nb-select>
+      </div>
+      <div class="space space-component4">
+        <div class="space space-component2">
+          <label class="text1 text-hint label">START DATE</label>
+
+            <input [nbDatepicker]="datepicker7" nbInput class="datepicker size-xl-medium" placeholder="Enter Date" shape="rectangle" status="basic">
+            <nb-datepicker #datepicker7>
+            </nb-datepicker>
+
+        </div>
+        <div class="space space-component3">
+          <label class="text2 text-hint label">END DATE</label>
+
+            <input [nbDatepicker]="datepicker8" nbInput class="datepicker1 size-xl-medium" placeholder="Enter Date" shape="rectangle" status="basic">
+            <nb-datepicker #datepicker8>
+            </nb-datepicker>
+
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+
+  <nb-card-footer>
+    <div class="space space-component6">
+      <button nbButton (click)="action()" class="button size-xl-medium" appearance="filled" status="basic">
+        <nb-icon class="icon btn-icon" icon="close"></nb-icon>
+        <span>cancel</span>
+      </button>
+      <button nbButton (click)="action()" class="button1 size-xl-medium" appearance="filled" status="primary">
+        <nb-icon class="icon btn-icon" icon="checkmark"></nb-icon>
+        <span>save</span>
+      </button>
+    </div>
+  </nb-card-footer>
+</nb-card>

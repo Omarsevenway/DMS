@@ -1,0 +1,73 @@
+<nb-card class="card" >
+  <nb-card-header>
+    <div class="space space-component1">
+      <div class="space space-component">
+        <h6 class="heading text-basic">Schedule Maintenance</h6>
+        <nb-icon class="icon hint" icon="close" (click)="action()"></nb-icon>
+      </div>
+    </div>
+  </nb-card-header>
+
+  <nb-card-body>
+    <div class="space space-component11">
+      <div class="space space-component2">
+        <label class="text text-hint label">VEHICLE</label>
+        <nb-select class="select size-xl-medium" placeholder="Select vehicle" status="basic">    
+            <nb-option value="option 1">AB 1561</nb-option>    
+            <nb-option value="option 2">BV 2516</nb-option>
+        </nb-select>
+      </div>
+      <div class="space space-component5">
+        <div class="space space-component3">
+          <label class="text1 text-hint label">WORKSHOP</label>
+          <nb-select class="select1 size-xl-medium" placeholder="Select workshop" status="basic">    
+              <nb-option value="option 1">Workshop A</nb-option>    
+              <nb-option value="option 2">Workshop B</nb-option>
+          </nb-select>
+        </div>
+        <div class="space space-component4">
+          <label class="text2 text-hint label">MAINTENANCE</label>
+          <nb-checkbox class="checkbox" status="primary">Regular Inspection</nb-checkbox>
+          <nb-checkbox class="checkbox1" status="primary">Unscheduled Inspection</nb-checkbox>
+        </div>
+      </div>
+      <div class="space space-component9">
+        <div class="space space-component6">
+          <label class="text3 text-hint label">DATE</label>
+          
+            <input [nbDatepicker]="datepicker16" nbInput class="datepicker size-xl-medium" placeholder="Enter Date" shape="rectangle" status="basic">
+            <nb-datepicker #datepicker16>
+            </nb-datepicker>
+          
+        </div>
+        <div class="space space-component8">
+          <div class="space space-component7">
+            <app-schedule-maintenance-time [time]="'8:00 AM'"></app-schedule-maintenance-time>
+            <app-schedule-maintenance-time [time]="'10:00 AM'"></app-schedule-maintenance-time>
+            <app-schedule-maintenance-time [time]="'12:00 PM'"></app-schedule-maintenance-time>
+            <app-schedule-maintenance-time [time]="'2:00 PM'"></app-schedule-maintenance-time>
+            <app-schedule-maintenance-time [time]="'4:00 PM'"></app-schedule-maintenance-time>
+            <app-schedule-maintenance-time [time]="'6:00 PM'"></app-schedule-maintenance-time>
+          </div>
+        </div>
+      </div>
+      <div class="space space-component10">
+        <label class="text4 text-hint label">COMMENT</label>
+        <input nbInput class="input size-xl-medium" placeholder="" type="text" shape="rectangle" status="basic">
+      </div>
+    </div>
+  </nb-card-body>
+
+  <nb-card-footer>
+    <div class="space space-component12">
+      <button nbButton class="button size-xl-medium" appearance="filled" status="basic" (click)="action()">
+        <nb-icon class="icon btn-icon" icon="close"></nb-icon>
+        <span>cancel</span>
+      </button>
+      <button nbButton class="button1 size-xl-medium" appearance="filled" status="primary" (click)="action()">
+        <nb-icon class="icon btn-icon" icon="checkmark"></nb-icon>
+        <span>save</span>
+      </button>
+    </div>
+  </nb-card-footer>
+</nb-card>

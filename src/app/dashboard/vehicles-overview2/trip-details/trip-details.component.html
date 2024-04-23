@@ -1,0 +1,135 @@
+<div class="space space-component43">
+  <div class="space space-component2">
+    <div class="space space-component">
+      <h6 class="heading text-basic">Trip Details</h6>
+    </div>
+    <div class="space space-component1">
+      <nb-icon class="icon hint" icon="close" (click)="detailsClose()"></nb-icon>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div *ngIf="trip | async as currentTrip" class="space space-component26">
+    <div class="space space-component7">
+      <div class="space space-component5">
+        <div class="space space-component3">
+          <span class="text text-basic subtitle">{{currentTrip.vehicle.name}}</span>
+        </div>
+        <div class="space space-component4">
+          <span class="text1 text-hint caption-2">{{currentTrip.vehicle.vin}}</span>
+          <span class="text2 text-primary caption-2">{{currentTrip.vehicleInTripStatus.toString().toUpperCase()}}</span>
+        </div>
+      </div>
+      <div class="space space-component6">
+        <button nbButton class="button size-xl-small" appearance="outline" status="danger">
+          <nb-icon class="icon btn-icon" icon="alert-triangle"></nb-icon>
+          <span>errors</span>
+        </button>
+      </div>
+    </div>
+    <div class="divider1"></div>
+    <div class="space space-component22">
+      <div class="space space-component14">
+        <div class="space space-component10">
+          <div class="space space-component8">
+            <nb-icon class="icon1 hint small" icon="calendar-outline"></nb-icon>
+            <span class="text3 text-hint caption">Start Date</span>
+          </div>
+          <div class="space space-component9">
+            <span class="text4 text-basic subtitle-2">May 14 / 10:35 AM</span>
+          </div>
+        </div>
+        <div class="space space-component13">
+          <div class="space space-component11">
+            <nb-icon class="icon2 hint small" icon="clock-outline"></nb-icon>
+            <span class="text5 text-hint caption">Duration</span>
+          </div>
+          <div class="space space-component12">
+            <span class="text6 text-basic subtitle-2">{{currentTrip.duration}}h</span>
+          </div>
+        </div>
+      </div>
+      <div class="space space-component21">
+        <div class="space space-component17">
+          <div class="space space-component15">
+            <nb-icon class="icon3 hint small" icon="car-outline"></nb-icon>
+            <span class="text7 text-hint caption">Distance Covered</span>
+          </div>
+          <div class="space space-component16">
+            <span class="text8 text-basic subtitle-2">{{currentTrip.coveredDistance}}mi</span>
+          </div>
+        </div>
+        <div class="space space-component20">
+          <div class="space space-component18">
+            <nb-icon class="icon4 hint small" icon="person-outline"></nb-icon>
+            <span class="text9 text-hint caption">Driver</span>
+          </div>
+          <div class="space space-component19">
+            <span class="text10 text-basic subtitle-2">
+              {{currentTrip.vehicle.assignedDrivers[0].driver.name + ' ' + currentTrip.vehicle.assignedDrivers[0].driver.surname }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider2"></div>
+    <div class="space space-component25">
+      <div class="space space-component23">
+        <consumption></consumption>
+      </div>
+      <div class="space space-component24">
+        <average-speed></average-speed>
+      </div>
+    </div>
+  </div>
+  <div class="divider3"></div>
+  <div class="space space-component29">
+    <div class="space space-component27">
+      <nb-icon class="icon5 primary" icon="pin"></nb-icon>
+    </div>
+    <div class="space space-component28">
+      <label class="text11 text-hint label">DEPARTURE</label>
+      <span class="text12 text-basic subtitle">Blvd Ne, Albuquerque, NM</span>
+      <span class="text13 text-hint caption">May 14, 4:00 PM</span>
+    </div>
+  </div>
+  <div class="space space-component36">
+    <div class="space space-component30">
+      <nb-icon class="icon6 danger" icon="pin"></nb-icon>
+    </div>
+    <div class="space space-component35">
+      <div class="space space-component33">
+        <div class="space space-component31">
+          <label class="text14 text-hint label">STOP</label>
+        </div>
+        <div class="space space-component32">
+          <nb-icon class="icon7 danger small" icon="alert-triangle"></nb-icon>
+          <span class="text15 text-danger caption">Long Idle Time</span>
+        </div>
+      </div>
+      <div class="space space-component34">
+        <span class="text16 text-basic subtitle">Blvd Ne, Albuquerque, NM</span>
+        <span class="text17 text-hint caption">May 14, 4:00 PM</span>
+      </div>
+    </div>
+  </div>
+  <div class="space space-component39">
+    <div class="space space-component37">
+      <nb-icon class="icon8 warning" icon="pin"></nb-icon>
+    </div>
+    <div class="space space-component38">
+      <label class="text18 text-hint label">STOP</label>
+      <span class="text19 text-basic subtitle">Blvd Ne, Albuquerque, NM</span>
+      <span class="text20 text-hint caption">May 14, 4:00 PM</span>
+    </div>
+  </div>
+  <div class="space space-component42">
+    <div class="space space-component40">
+      <nb-icon class="icon9 primary" icon="pin"></nb-icon>
+    </div>
+    <div class="space space-component41">
+      <label class="text21 text-hint label">DEPARTURE</label>
+      <span class="text22 text-basic subtitle">Blvd Ne, Albuquerque, NM</span>
+      <span class="text23 text-hint caption">May 14, 4:00 PM</span>
+    </div>
+  </div>
+</div>

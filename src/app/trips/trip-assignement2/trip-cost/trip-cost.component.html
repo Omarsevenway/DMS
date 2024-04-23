@@ -1,0 +1,63 @@
+<nb-card class="card" >
+  <nb-card-header>
+    <div class="space space-component">
+      <nb-icon class="icon hint large" icon="pricetags"></nb-icon>
+      <h6 class="heading text-basic">Trip Cost</h6>
+    </div>
+  </nb-card-header>
+
+  <nb-card-body>
+    <div class="space space-component13">
+      <div class="space space-component3">
+        <div class="space space-component1">
+          <nb-icon class="icon1 hint" icon="calendar-outline"></nb-icon>
+        </div>
+        <div class="space space-component2">
+          <span class="text text-hint subtitle">Dates</span>
+          <span class="text1 text-basic subtitle">May 14, 2020 5:00PM - May 17, 2020 1:00PM</span>
+        </div>
+      </div>
+      <div class="space space-component3">
+        <div class="space space-component4">
+          <nb-icon class="icon2 hint" icon="clock-outline"></nb-icon>
+        </div>
+        <div class="space space-component5">
+          <span class="text2 text-hint subtitle">Trip Time</span>
+          <span class="text3 text-basic subtitle">4d 3h</span>
+        </div>
+      </div>
+      <div class="space space-component3">
+        <div class="space space-component7">
+          <nb-icon class="icon3 hint" icon="pin-outline"></nb-icon>
+        </div>
+        <div class="space space-component8">
+          <span class="text4 text-hint subtitle">Distance</span>
+          <span class="text5 text-basic subtitle">4,239mi</span>
+        </div>
+      </div>
+      <div class="space space-component3">
+        <div class="space space-component10">
+          <nb-icon class="icon4 hint" icon="star-outline"></nb-icon>
+        </div>
+        <div class="space space-component11">
+          <span class="text6 text-hint subtitle">Fuel Consimption</span>
+          <span class="text7 text-basic subtitle">6.15 MPG</span>
+        </div>
+      </div>
+      <app-cost class="cost-card"></app-cost>
+    </div>
+  </nb-card-body>
+
+  <nb-card-footer>
+    <div class="space space-component14">
+      <button nbButton class="button size-xl-medium" appearance="filled" status="basic" routerLink="/Trips/scheduleTrip">
+        <nb-icon class="icon btn-icon" icon="close-outline"></nb-icon>
+        <span>cancel</span>
+      </button>
+      <button nbButton class="button1 size-xl-medium" appearance="filled" status="primary" routerLink="/Trips/scheduleTrip"> 
+        <nb-icon class="icon btn-icon" icon="calendar"></nb-icon>
+        <span>schedule trip</span>
+      </button>
+    </div>
+  </nb-card-footer>
+</nb-card>

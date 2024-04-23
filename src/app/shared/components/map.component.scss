@@ -1,0 +1,14 @@
+::ng-deep .leaflet-popup-content {
+  margin: 0;
+}
+
+::ng-deep .leaflet-popup-content-wrapper {
+   width: 400px;
+   height: auto;
+   padding: 0;
+   border-radius: 0.375rem
+ }
+
+::ng-deep .leaflet-popup-close-button {
+  display: none;
+}

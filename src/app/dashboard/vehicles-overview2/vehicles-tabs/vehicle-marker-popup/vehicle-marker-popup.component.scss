@@ -1,0 +1,276 @@
+:host {
+  width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+  nb-card {
+    border: none;
+  }
+
+  .indicator {
+    width: 171px;
+    height: 60px;
+    margin: 0 0 8px 0;
+    display: block;
+  }
+
+  .heading {
+    margin: 0 10px 0 0;
+  }
+
+  .text {
+    margin: 0;
+  }
+
+  .space-component {
+    height: auto;
+    min-height: 2rem;
+    width: 70%;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 20px 0 20px 24px;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .text1 {
+    margin: 0;
+  }
+
+  .space-component1 {
+    height: auto;
+    min-height: 2rem;
+    width: 30%;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    padding: 0 24px 0 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component2 {
+    height: auto;
+    min-height: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component3 {
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    margin: 16px 0 0 0;
+    background-color: var(--bg-disabled-color);
+  }
+
+  .space-component4 {
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component5 {
+    height: 100%;
+    width: 32px;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    padding: 8px 0 0 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .text2 {
+    margin: 0 4px 0 0;
+  }
+
+  .text3 {
+    margin: 0 4px 0 0;
+  }
+
+  .space-component6 {
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 8px 0 0 2px;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component7 {
+    height: 50px;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component8 {
+    height: 100%;
+    width: 32px;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    padding: 8px 0 0 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .text4 {
+    margin: 0 4px 0 0;
+  }
+
+  .text5 {
+    margin: 0 4px 0 0;
+  }
+
+  .space-component9 {
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 8px 0 0 2px;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component10 {
+    height: 50px;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component11 {
+    height: auto;
+    min-height: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .button {
+    margin: 0 4px 0 0;
+    width: 171px;
+    flex-direction: row;
+    > nb-icon.btn-icon.icon {
+      margin: 0;
+    }
+
+    span {
+      display: inline;
+    }
+
+    > nb-icon {
+      display: none;
+    }
+  }
+
+  .space-component12 {
+    height: auto;
+    min-height: 2rem;
+    width: 50%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .button1 {
+    margin: 0 0 0 4px;
+    width: 171px;
+    flex-direction: row;
+    > nb-icon.btn-icon.icon {
+      margin: 0;
+    }
+
+    span {
+      display: inline;
+    }
+
+    > nb-icon {
+      display: none;
+    }
+  }
+
+  .space-component13 {
+    height: auto;
+    min-height: 2rem;
+    width: 50%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component14 {
+    height: auto;
+    min-height: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    > nb-card-header {
+      padding: 0;
+    }
+  }
+
+}

@@ -1,0 +1,26 @@
+<nb-card class="card" >
+  <nb-card-body *ngIf="this.status === 'success'">
+    <div class="space space-component">
+      <nb-icon class="icon primary" icon="checkmark-circle-2"></nb-icon>
+      <span class="text text-primary subtitle">Success</span>
+    </div>
+  </nb-card-body>
+  <nb-card-body *ngIf="this.status === 'error'">
+    <div class="space space-component">
+      <nb-icon class="icon danger" icon="alert-triangle"></nb-icon>
+      <span class="text text-danger subtitle">Error</span>
+    </div>
+  </nb-card-body>
+  <nb-card-body *ngIf="this.status === 'warning'">
+    <div class="space space-component">
+      <nb-icon class="icon warning" icon="alert-circle"></nb-icon>
+      <span class="text text-warning subtitle">Warning</span>
+    </div>
+  </nb-card-body>
+  <nb-card-body *ngIf="this.status === 'info'">
+    <div class="space space-component">
+      <nb-icon class="icon info" icon="info"></nb-icon>
+      <span class="text text-info subtitle">Info</span>
+    </div>
+  </nb-card-body>
+</nb-card>

@@ -1,0 +1,26 @@
+<div class="space space-component6">
+  <div class="space space-component5 left-button" *ngIf="vehiclesButtonVisible">
+    <button nbButton class="button size-xl-large" appearance="filled" status="control" (click)="listClick()">
+      <nb-icon class="icon btn-icon" icon="list-outline"></nb-icon>
+      <span>Button</span>
+    </button>
+  </div>
+  <div class="space space-component">
+    <app-indicator [critical]="true" [val]="2" [label]="'Vehicles with errors'"></app-indicator>
+  </div>
+  <div class="space space-component1">
+    <app-indicator [critical]="false" [val]="5" [label]="'Vehicles with warnings'"></app-indicator>
+  </div>
+  <div class="space space-component2">
+    <app-indicator [critical]="false" [val]="1" [label]="'Side route'"></app-indicator>
+  </div>
+  <div class="space space-component3">
+    <app-indicator [critical]="false" [val]="3" [label]="'Being late'"></app-indicator>
+  </div>
+  <div class="space space-component5 right-button" *ngIf="indicatorsButtonVisible">
+      <button nbButton class="button size-xl-large" appearance="filled" status="control" (click)="settingsClick()">
+        <nb-icon class="icon btn-icon" icon="settings-2"></nb-icon>
+        <span>Button</span>
+      </button>
+  </div>
+</div>

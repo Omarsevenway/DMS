@@ -1,0 +1,41 @@
+<nb-layout withScroll [class.header-hidden]="!(layout$ | async)?.header">
+
+  <nb-layout-header *ngIf="(layout$ | async)?.header" class="header" fixed>
+    <div class="space space-component8">
+      <div class="space space-component">
+        <h5 class="heading text-alternate">Fleet Management</h5>
+      </div>
+      <div class="space space-component7">
+        <div class="space space-component1">
+          <div class="divider"></div>
+          <nb-icon class="icon alternate large hamburger-icon" icon="menu" (click)="toggleSidebar()"></nb-icon>
+          <div class="divider"></div>
+        </div>
+        <div class="space space-component6">
+          <div class="space space-component2">
+            <div class="divider"></div>
+          </div>
+          <div class="space space-component3">
+            <img class="image" src="https://st.depositphotos.com/1008939/1880/i/950/depositphotos_18807295-stock-photo-portrait-of-handsome-man.jpg">
+          </div>
+          <div class="space space-component4">
+            <span class="text text-alternate caption">User Name</span>
+            <span class="text1 text-alternate subtitle-2">name.surname@gmail.com</span>
+          </div>
+          <div class="space space-component5">
+            <nb-icon class="icon1 alternate" icon="arrow-ios-downward"></nb-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nb-layout-header>
+
+  <nb-sidebar *ngIf="(layout$ | async)?.sidebar" class="sidebar" responsive [collapsedBreakpoints]="['xs', 'is', 'sm']" [compactedBreakpoints]="[]">
+    <nb-menu class="menu" [items]="items"></nb-menu>
+  </nb-sidebar>
+
+  <nb-layout-column [style.padding]="padding$ | async">
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+
+</nb-layout>

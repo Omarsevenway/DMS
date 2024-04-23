@@ -1,0 +1,193 @@
+<nb-tabset class="tabs">
+  <nb-tab tabTitle="history" class="slot">
+    <div class="space space-component17">
+      <div class="space space-component2">
+        <div class="space space-component">
+          <nb-select class="select size-xl-medium" placeholder="All Vehicles" status="basic">    
+              <nb-option value="All Vehicles">All Vehicles</nb-option>    
+              <nb-option *ngFor="let item of allVehicles" value="item">{{item}}</nb-option>
+          </nb-select>
+          <nb-select class="select1 size-xl-medium" placeholder="All Tasks" status="basic">    
+              <nb-option value="All Types">All Types</nb-option>
+              <nb-option value="Oil Change">Oil Change</nb-option>
+              <nb-option value="Engine Examination">Engine Examination</nb-option>
+              <nb-option value="Filter Replace">Filter Replace</nb-option>
+              <nb-option value="Engine Repair">Engine Repair</nb-option>
+          </nb-select>
+          
+            <input [nbDatepicker]="datepicker17" nbInput class="datepicker size-xl-medium" placeholder="Enter Date" shape="rectangle" status="basic">
+            <nb-datepicker #datepicker17>
+            </nb-datepicker>
+          
+        </div>
+        <div class="space space-component1">
+          <button nbButton class="button size-xl-medium" appearance="outline" status="basic">
+            <nb-icon class="icon btn-icon" icon="close-outline"></nb-icon>
+            <span>clear</span>
+          </button>
+        </div>
+      </div>
+      <div class="space space-component3">
+        <div class="divider"></div>
+      </div>
+      <div class="space space-component7">
+        <div class="space space-component6">
+          <div class="space space-component4">
+            <button nbButton class="button1 size-xl-medium" appearance="ghost" status="basic">
+              <nb-icon class="icon btn-icon" icon="settings-2"></nb-icon>
+              <span>Button</span>
+            </button>
+            <button nbButton class="button2 size-xl-medium" appearance="ghost" status="basic">
+              <nb-icon class="icon btn-icon" icon="trash-2"></nb-icon>
+              <span>Button</span>
+            </button>
+          </div>
+          <div class="space space-component5">
+            <label class="text text-hint label">Items on page</label>
+            <nb-select class="select2 size-xl-medium" placeholder="20" status="basic">    
+                <nb-option value="10">10</nb-option>    
+                <nb-option value="20">20</nb-option>    
+                <nb-option value="30">30</nb-option>    
+                <nb-option value="40">40</nb-option>    
+                <nb-option value="50">50</nb-option>
+            </nb-select>
+            <button nbButton class="button3 size-xl-medium" appearance="filled" status="control">
+              <nb-icon class="icon btn-icon" icon="chevron-left"></nb-icon>
+              <span>Button</span>
+            </button>
+            <button nbButton class="button4 size-xl-medium" appearance="filled" status="control">
+              <nb-icon class="icon btn-icon" icon="chevron-right"></nb-icon>
+              <span>Button</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="space space-component8">
+        
+      </div>
+      <div class="space space-component11">
+        <div class="space space-component9">
+          
+        </div>
+        <div class="space space-component10">
+          <label class="text1 text-hint label">VEHICLE</label>
+        </div>
+      </div>
+      <div class="space space-component12">
+        <label class="text2 text-hint label">DATE</label>
+      </div>
+      <div class="space space-component13">
+        <label class="text3 text-hint label">TASKS</label>
+      </div>
+      <div class="space space-component14">
+        <label class="text4 text-hint label">COST</label>
+        <nb-icon class="icon hint small" icon="arrow-downward"></nb-icon>
+      </div>
+      <div class="space space-component15">
+        
+      </div>
+      <div class="space space-component16">
+        
+      </div>
+      <app-history-list-item *ngFor="let item of history" [vehicleName]="item.name" [cost]="item.cost" [status]="item.status" [tasks]="item.tasks"></app-history-list-item>
+    </div>
+  </nb-tab>
+
+  <nb-tab tabTitle="planned" class="slot">
+    <div class="space space-component37">
+      <div class="space space-component21">
+        <div class="space space-component20">
+          <div class="space space-component18">
+            <nb-select class="select3 size-xl-medium" placeholder="All Vehicles" status="basic">    
+                <nb-option value="All Vehicles">All Vehicles</nb-option>    
+                <nb-option *ngFor="let item of allVehicles" value="item">{{item}}</nb-option>
+            </nb-select>
+            <nb-select class="select4 size-xl-medium" placeholder="All Tasks" status="basic">    
+                <nb-option value="All Types">All Types</nb-option>
+                <nb-option value="Oil Change">Oil Change</nb-option>
+                <nb-option value="Engine Examination">Engine Examination</nb-option>
+                <nb-option value="Filter Replace">Filter Replace</nb-option>
+                <nb-option value="Engine Repair">Engine Repair</nb-option>
+            </nb-select>
+            
+              <input [nbDatepicker]="datepicker18" nbInput class="datepicker1 size-xl-medium" placeholder="Enter Date" shape="rectangle" status="basic">
+              <nb-datepicker #datepicker18>
+              </nb-datepicker>
+            
+          </div>
+          <div class="space space-component19">
+            <button nbButton class="button5 size-xl-medium" appearance="outline" status="basic">
+              <nb-icon class="icon btn-icon" icon="close-outline"></nb-icon>
+              <span>clear</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="space space-component22">
+        <div class="divider1"></div>
+      </div>
+      <div class="space space-component26">
+        <div class="space space-component25">
+          <div class="space space-component23">
+            <button nbButton class="button6 size-xl-medium" appearance="ghost" status="basic">
+              <nb-icon class="icon btn-icon" icon="settings-2"></nb-icon>
+              <span>Button</span>
+            </button>
+            <button nbButton class="button7 size-xl-medium" appearance="ghost" status="basic">
+              <nb-icon class="icon btn-icon" icon="trash-2"></nb-icon>
+              <span>Button</span>
+            </button>
+          </div>
+          <div class="space space-component24">
+            <label class="text5 text-hint label">Items on page</label>
+            <nb-select class="select5 size-xl-medium" placeholder="20" status="basic">    
+                <nb-option value="10">10</nb-option>    
+                <nb-option value="20">20</nb-option>    
+                <nb-option value="30">30</nb-option>    
+                <nb-option value="40">40</nb-option>    
+                <nb-option value="50">50</nb-option>
+            </nb-select>
+            <button nbButton class="button8 size-xl-medium" appearance="filled" status="control">
+              <nb-icon class="icon btn-icon" icon="chevron-left"></nb-icon>
+              <span>Button</span>
+            </button>
+            <button nbButton class="button9 size-xl-medium" appearance="filled" status="control">
+              <nb-icon class="icon btn-icon" icon="chevron-right"></nb-icon>
+              <span>Button</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="space space-component36">
+        <div class="space space-component27">
+          
+        </div>
+        <div class="space space-component30">
+          <div class="space space-component28">
+            
+          </div>
+          <div class="space space-component29">
+            <label class="text6 text-hint label">VEHICLE</label>
+          </div>
+        </div>
+        <div class="space space-component31">
+          <label class="text7 text-hint label">DATE</label>
+        </div>
+        <div class="space space-component32">
+          <label class="text8 text-hint label">TASKS PLANNED</label>
+        </div>
+        <div class="space space-component33">
+          <label class="text9 text-hint label">COST PLANNED</label>
+          <nb-icon class="icon1 hint small" icon="arrow-downward"></nb-icon>
+        </div>
+        <div class="space space-component34">
+          
+        </div>
+        <div class="space space-component35">
+          
+        </div>
+      </div>
+      <app-history-list-item *ngFor="let item of planned" [vehicleName]="item.name" [cost]="item.cost" [status]="item.status" [tasks]="item.tasks"></app-history-list-item>
+    </div>
+  </nb-tab>
+</nb-tabset>

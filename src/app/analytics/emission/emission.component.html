@@ -1,0 +1,28 @@
+<nb-card class="card" >
+  <nb-card-header>
+    <div class="space space-component">
+      <h6 class="heading text-basic">Co2 Emission</h6>
+      <div>
+        <button nbButton class="button">DAY</button>
+        <button nbButton class="button">MONTH</button>
+        <button nbButton class="button">YEAR</button>
+      </div>
+    </div>
+  </nb-card-header>
+
+  <nb-card-body>
+    <div class="space space-component4">
+      <div class="space space-component3">
+        <span class="text text-hint caption">Average Emission</span>
+        <div class="space space-component2">
+          <h5 class="heading1 text-basic">7,000T</h5>
+          <div class="space space-component1">
+            <nb-icon class="icon basic tiny" icon="arrow-upward-outline"></nb-icon>
+            <span class="text1 text-hint caption">0,5%</span>
+          </div>
+        </div>
+      </div>
+      <app-bar-chart class="bar-chart" horizontal [data]="data"></app-bar-chart>
+    </div>
+  </nb-card-body>
+</nb-card>

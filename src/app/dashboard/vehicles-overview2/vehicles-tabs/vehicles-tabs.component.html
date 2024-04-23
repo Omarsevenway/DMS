@@ -1,0 +1,26 @@
+<script src="vehicles-tabs.component.ts"></script>
+<nb-tabset class="tabs" fullWidth>
+  <nb-tab tabTitle="all" class="slot">
+    <div class="space space-component43">
+      <div class="space vehicle-list-item" *ngFor="let item of allVehicles">
+        <app-vehicle (vehicleClicked)="handleVehicleClick()" (tripButtonClicked)="handleButtonClick()" [trip]="item"></app-vehicle>
+      </div>
+    </div>
+  </nb-tab>
+
+  <nb-tab tabTitle="driving" class="slot">
+    <div class="space space-component43">
+      <div class="space vehicle-list-item" *ngFor="let item of drivingVehicles">
+        <app-vehicle (vehicleClicked)="handleVehicleClick()" (tripButtonClicked)="handleButtonClick()" [trip]="item"></app-vehicle>
+      </div>
+    </div>
+  </nb-tab>
+
+  <nb-tab tabTitle="parked" class="slot">
+    <div class="space space-component43">
+      <div class="space vehicle-list-item" *ngFor="let item of parkedVehicles">
+        <app-vehicle (vehicleClicked)="handleVehicleClick()" (tripButtonClicked)="handleButtonClick()" [trip]="item"></app-vehicle>
+      </div>
+    </div>
+  </nb-tab>
+</nb-tabset>

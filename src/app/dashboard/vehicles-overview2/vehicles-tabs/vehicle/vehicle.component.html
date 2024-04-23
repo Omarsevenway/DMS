@@ -1,0 +1,25 @@
+        <div *ngIf="currentTrip$ | async as currentTrip"
+             [ngClass]="{'chosen-vehicle-bg': currentTrip === this.trip}"
+             class="space space-component3" (click)="vehicleClick()">
+          <div class="space space-component">
+            <img class="image" [src]="this.getImageSource()">
+          </div>
+          <div class="space space-component1">
+            <h5 class="heading text-basic">{{this.trip.vehicle.name}}</h5>
+            <p class="text text-hint paragraph">17 May, 20 / 1h 15min</p>
+          </div>
+          <div class="space space-component2">
+            <nb-icon *ngIf="this.trip.vehicle.condition.overview < 50" [nbPopover]="popover" nbPopover nbPopoverPlacement="right"
+                     nbPopoverTrigger="hint" class="icon danger" icon="alert-triangle"></nb-icon>
+            <button nbButton class="button size-xl-tiny" appearance="filled" status="basic" (click)="buttonClick($event)">
+              <nb-icon class="icon btn-icon" icon="navigation-2"></nb-icon>
+              <span>trip</span>
+            </button>
+          </div>
+        </div>
+        <div class="space space-component4">
+          <div class="divider"></div>
+        </div>
+
+
+

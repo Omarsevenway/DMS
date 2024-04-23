@@ -1,0 +1,42 @@
+<nb-card class="card" >
+  <nb-card-header>
+    <div class="space space-component9">
+      <div class="space space-component7">
+        <h6 class="heading text-basic">Trip</h6>
+        <span class="text8 text-primary subtitle-2">LIVE</span>
+      </div>
+      <div class="space space-component8">
+        <button nbButton class="button size-xl-small" appearance="outline" status="primary">
+          <nb-icon class="icon btn-icon" icon="star"></nb-icon>
+          <span>map</span>
+        </button>
+      </div>
+    </div>
+  </nb-card-header>
+
+  <nb-card-body>
+    <div class="space space-component6">
+      <div class="space space-component4">
+        <div class="space space-component">
+          <span class="text text-hint caption">Start Date</span>
+          <span class="text1 text-basic subtitle-2">May 14 / 2:35 AM</span>
+        </div>
+        <div class="space space-component1">
+          <span class="text2 text-hint caption">End Date</span>
+          <span class="text3 text-basic subtitle-2">May 14 / 12:40 PM</span>
+        </div>
+        <div class="space space-component2">
+          <span class="text4 text-hint caption">Distance Covered</span>
+          <span class="text5 text-basic subtitle-2">501.4 mi</span>
+        </div>
+        <div class="space space-component3">
+          <span class="text6 text-hint caption">Duration</span>
+          <span class="text7 text-basic subtitle-2">10h 5min</span>
+        </div>
+      </div>
+      <div class="space space-component5">
+        <app-map [route]="tripCoords" [center]="mapCenter" class="map"></app-map>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

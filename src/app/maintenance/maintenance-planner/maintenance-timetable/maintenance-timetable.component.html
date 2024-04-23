@@ -1,0 +1,28 @@
+<nb-card class="card" >
+  <nb-card-header>
+    <div class="space space-component2">
+      <div class="space space-component">
+        <h6 class="heading text-basic">March 30</h6>
+        <button nbButton class="button">DAY</button>
+        <button nbButton class="button">WEEK</button>
+        <button nbButton class="button">MONTH</button>
+      </div>
+      <div class="space space-component1">
+        <button nbButton class="button size-xl-medium" appearance="filled" status="primary" (click)="schedule()">
+          <nb-icon class="icon btn-icon" icon="calendar-outline"></nb-icon>
+          <span>schedule</span>
+        </button>
+        <button nbButton class="button1 size-xl-medium" appearance="filled" status="basic">
+          <nb-icon class="icon btn-icon" icon="expand"></nb-icon>
+          <span>Button</span>
+        </button>
+      </div>
+    </div>
+  </nb-card-header>
+
+  <nb-card-body>
+    <div class="space space-component3">
+      <app-maintenance-tableview></app-maintenance-tableview>
+    </div>
+  </nb-card-body>
+</nb-card>

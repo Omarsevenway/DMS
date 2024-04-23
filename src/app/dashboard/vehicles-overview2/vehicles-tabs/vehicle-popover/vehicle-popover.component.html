@@ -1,0 +1,42 @@
+<nb-card class="card" >
+  <nb-card-body>
+    <div class="space space-component12">
+      <div *ngIf="engineAlert" class="space space-component2">
+        <div class="space space-component">
+          <nb-icon class="icon danger" icon="alert-triangle"></nb-icon>
+        </div>
+        <div class="space space-component1">
+          <span class="text text-danger caption-2">Engine critical state</span>
+          <span class="text1 text-danger caption">Please check fuel pump</span>
+        </div>
+      </div>
+      <div *ngIf="batteryAlert" class="space space-component2">
+        <div class="space space-component">
+          <nb-icon class="icon danger" icon="alert-triangle"></nb-icon>
+        </div>
+        <div class="space space-component1">
+          <span class="text text-danger caption-2">Low battery</span>
+          <span class="text1 text-danger caption">Please recharge battery</span>
+        </div>
+      </div>
+      <div *ngIf="fuelProblem" class="space space-component2">
+        <div class="space space-component">
+          <nb-icon class="icon danger" icon="alert-triangle"></nb-icon>
+        </div>
+        <div class="space space-component1">
+          <span class="text text-danger caption-2">Critical fuel level</span>
+          <span class="text1 text-danger caption">Please refuel</span>
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+
+  <nb-card-footer>
+    <div class="space space-component13">
+      <button nbButton class="button size-xl-medium" appearance="filled" status="basic">
+        <nb-icon class="icon btn-icon" icon="star"></nb-icon>
+        <span>ALL EVENTS</span>
+      </button>
+    </div>
+  </nb-card-footer>
+</nb-card>

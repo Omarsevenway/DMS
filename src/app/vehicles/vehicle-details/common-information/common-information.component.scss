@@ -1,0 +1,265 @@
+:host {
+
+  width: 40%;
+  height: 100%;
+  margin: 0;
+  display: block;
+
+  .image {
+    width: 60px;
+    height: 60px;
+    border-radius: 0;
+    object-fit: fill;
+  }
+
+  .space-component {
+    height: 100%;
+    width: 88px;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-end;
+    padding: 24px 0 6px 24px;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .heading {
+    margin: 0;
+  }
+
+  .space-component1 {
+    height: 60%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .text {
+    margin: 0 4px 0 0;
+  }
+
+  .text1 {
+    margin: 0 12px 0 0;
+  }
+
+  .text2 {
+    margin: 0 4px 0 0;
+  }
+
+  .text3 {
+    margin: 0 12px 0 0;
+  }
+
+  .space-component2 {
+    height: 40%;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component3 {
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 16px 0 0 16px;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component4 {
+    height: 35%;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    margin: 0;
+    background-color: var(--bg-disabled-color);
+  }
+
+  .text4 {
+    margin: 0 4px 2px 0;
+  }
+
+  .space-component5 {
+    height: 50%;
+    width: 50%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 16px 0 0 24px;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .text5 {
+    margin: 0 4px 2px 0;
+  }
+
+  .text6 {
+    margin: 0;
+  }
+
+  .space-component6 {
+    height: 50%;
+    width: 50%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 16px 0 0 24px;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .text7 {
+    margin: 0 4px 2px 0;
+  }
+
+  .text8 {
+    margin: 0;
+  }
+
+  .space-component7 {
+    height: 50%;
+    width: 50%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 16px 0 0 24px;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .text9 {
+    margin: 0 4px 2px 0;
+  }
+
+  .text10 {
+    margin: 0;
+  }
+
+  .space-component8 {
+    height: 50%;
+    width: 50%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 16px 0 0 24px;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component9 {
+    height: 100%;
+    width: 65%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+
+    > div {
+      @media (max-width: 1280px) {
+        padding: 8px 0 0 16px;
+      }
+    }
+  }
+
+  .space-component10 {
+    height: 50%;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component11 {
+    height: 50%;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component12 {
+    height: 100%;
+    width: 35%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component13 {
+    height: 64%;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component14 {
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+
+    > nb-card-header {
+      padding: 0;
+    }
+
+    > nb-card-body {
+      padding: 0;
+    }
+
+    > nb-card-footer {
+      padding: 0;
+    }
+  }
+
+}

@@ -1,0 +1,37 @@
+<nb-tabset class="tabs">
+  <nb-tab tabTitle="All statuses" class="slot">
+    <div class="space space-component21">
+      <tab-header [vehicles]="this.vehiclesService.getVehicles()"></tab-header>
+      <div *ngFor="let vehicle of this.vehiclesService.getVehicles()" class="space space-component18">
+        <vehicle [vehicle]="vehicle"></vehicle>
+      </div>
+    </div>
+  </nb-tab>
+
+  <nb-tab tabTitle="En Route" class="slot">
+    <div class="space space-component21">
+      <tab-header [vehicles]="this.vehiclesService.getOnRouteVehicles()"></tab-header>
+      <div *ngFor="let vehicle of this.vehiclesService.getOnRouteVehicles()" class="space space-component18">
+        <vehicle [vehicle]="vehicle"></vehicle>
+      </div>
+    </div>
+  </nb-tab>
+
+  <nb-tab tabTitle="available" class="slot">
+    <div class="space space-component21">
+      <tab-header [vehicles]="this.vehiclesService.getAvailableVehicles()"></tab-header>
+      <div *ngFor="let vehicle of this.vehiclesService.getAvailableVehicles()" class="space space-component18">
+        <vehicle [vehicle]="vehicle"></vehicle>
+      </div>
+    </div>
+  </nb-tab>
+
+  <nb-tab tabTitle="out of service" class="slot">
+    <div class="space space-component21">
+      <tab-header [vehicles]="this.vehiclesService.getVehicles()"></tab-header>
+      <div *ngFor="let vehicle of this.vehiclesService.getOutOfServiceVehicles()" class="space space-component18">
+        <vehicle [vehicle]="vehicle"></vehicle>
+      </div>
+    </div>
+  </nb-tab>
+</nb-tabset>

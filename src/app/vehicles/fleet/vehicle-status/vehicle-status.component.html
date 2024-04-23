@@ -1,0 +1,22 @@
+<nb-card class="card" >
+  <nb-card-body *ngIf="this.status === 'out of service'">
+    <div class="space space-component">
+      <nb-icon class="icon danger" icon="slash"></nb-icon>
+      <span class="text text-danger subtitle">Out of Service</span>
+    </div>
+  </nb-card-body>
+
+  <nb-card-body *ngIf="this.status === 'available'">
+    <div class="space space-component">
+      <nb-icon class="icon info" icon="checkmark-circle-2"></nb-icon>
+      <span class="text text-info subtitle">Available</span>
+    </div>
+  </nb-card-body>
+
+  <nb-card-body *ngIf="this.status === 'on route'">
+    <div class="space space-component">
+      <nb-icon class="icon primary" icon="navigation-2"></nb-icon>
+      <span class="text text-primary subtitle">En Route</span>
+    </div>
+  </nb-card-body>
+</nb-card>

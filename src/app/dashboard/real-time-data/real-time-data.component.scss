@@ -1,0 +1,230 @@
+:host {
+
+  .heading {
+    margin: 0 20px;
+  }
+
+  .divider {
+    width: 1px;
+    height: 100%;
+    margin: 0 24px 0 0;
+    background-color: var(--bg-disabled-color);
+  }
+
+  .text {
+    margin: 0 18px 0 11px;
+  }
+
+  .text1 {
+    margin: 0 4px 0 10px;
+  }
+
+  .space-component {
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .button {
+    margin: 0 8px 0 0;
+    width: auto;
+    flex-direction: row;
+    > nb-icon.btn-icon.icon {
+      margin: 0 .75rem 0 0;
+    }
+
+    span {
+      display: inline;
+    }
+
+    > nb-icon {
+      display: inline;
+    }
+  }
+
+  .button1 {
+    margin: 0 16px 0 0;
+    width: auto;
+    flex-direction: row;
+    > nb-icon.btn-icon.icon {
+      margin: 0;
+    }
+
+    span {
+      display: none;
+    }
+
+    > nb-icon {
+      display: inline;
+    }
+  }
+
+  .space-component1 {
+    height: auto;
+    min-height: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-end;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component2 {
+    height: 64px;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .space-component3 {
+    height: 32px;
+    width: 32px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .heading1 {
+    margin: 0 32px 0 0;
+  }
+
+  .text2 {
+    margin: 0 32px 0 0;
+  }
+
+  .space-component4 {
+    height: 54px;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .indicator-card {
+
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0 8px;
+
+    nb-card-body {
+      display: flex;
+      height: 76px;
+      padding: 10px 0 12px 10px;
+    }
+  }
+
+  .heading2 {
+    margin: 0 32px 0 0;
+  }
+
+  .text3 {
+    margin: 0 32px 0 0;
+  }
+
+  .heading3 {
+    margin: 0 32px 0 0;
+  }
+
+  .text4 {
+    margin: 0 32px 0 0;
+  }
+
+  .heading4 {
+    margin: 0 32px 0 0;
+  }
+
+  .text5 {
+    margin: 0 32px 0 0;
+  }
+
+  .space-component15 {
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 16px 8px 8px 8px;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component16 {
+    height: 380px;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component17 {
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0 8px;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component18 {
+    height: auto;
+    min-height: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0 8px;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component19 {
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0 8px 8px 8px;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component20 {
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    overflow: visible;
+    background-color: unset;
+  }
+
+}

@@ -1,0 +1,12 @@
+<nb-card class="card" >
+  <nb-card-body>
+    <div class="space space-component3">
+      <div class="space space-component">
+        <h6 class="heading text-basic">Vehicle Condition</h6>
+      </div>
+      <div class="space space-component2">
+        <div echarts [options]="options" class="echart" (chartInit)="onChartInit($event)"></div>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

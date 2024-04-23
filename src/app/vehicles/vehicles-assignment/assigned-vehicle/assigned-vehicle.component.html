@@ -1,0 +1,79 @@
+<nb-card class="card">
+  <nb-card-body>
+    <div class="space space-component9">
+      <div class="space space-component">
+        <nb-checkbox class="checkbox" status="basic"></nb-checkbox>
+      </div>
+      <div class="space space-component3">
+        <div class="space space-component1">
+          <img class="image" [src]="this.getImageSource()">
+        </div>
+        <div class="space space-component2">
+          <h6 class="heading text-basic">{{this.vehicle.name}}</h6>
+          <span class="text text-hint caption-2">{{this.vehicle.type}}</span>
+        </div>
+      </div>
+      <div class="space space-component4">
+        <vehicle-status [status]="this.vehicle.status"></vehicle-status>
+      </div>
+      <div class="space space-component5">
+        <nb-icon class="icon hint" icon="person-outline"></nb-icon>
+        <span *ngIf="this.isDriverExist()" class="text1 text-basic subtitle">
+          {{this.getFullName()}}
+        </span>
+        <span *ngIf="!this.isDriverExist()" class="text1 text-disabled subtitle">Not Assigned</span>
+
+      </div>
+      <div class="space space-component6">
+        <nb-icon class="icon1 hint" icon="calendar-outline"></nb-icon>
+        <span *ngIf="this.isDriverExist()" class="text2 text-basic subtitle">
+          {{this.getDatesGap()}}
+        </span>
+        <span *ngIf="!this.isDriverExist()" class="text2 text-disabled subtitle">Not Defined</span>
+      </div>
+
+      <div class="space space-component7">
+        <button *ngIf="this.isDriverExist()" nbButton class="button size-xl-small" appearance="filled" status="basic">
+          <nb-icon class="icon btn-icon" icon="close-outline"></nb-icon>
+          <span>remove</span>
+        </button>
+
+        <button *ngIf="!this.isDriverExist()" (click)="openDialog()" nbButton class="button size-xl-small"
+                appearance="filled" status="basic">
+          <nb-icon class="icon btn-icon" icon="person-outline"></nb-icon>
+          <span>assign</span>
+        </button>
+      </div>
+      <div class="space space-component8">
+        <nb-icon class="icon2 hint" icon="arrow-ios-downward" (click)="detailsClick()"></nb-icon>
+      </div>
+    </div>
+
+    <div class="divider" *ngIf="showDetails"></div>
+    <div class="space" *ngIf="showDetails">
+      <div class="space maintenance-details">
+      </div>
+      <div class="space tasks">
+        <span class="text6 text-hint caption-2">ALL DRIVERS</span>
+
+        <div class="space driver" *ngFor="let assignedDriver of this.vehicle.assignedDrivers">
+
+          <div class="space driver-name">
+            <span class="text2 text-basic subtitle">{{assignedDriver.driver.name + ' ' + assignedDriver.driver.surname}}</span>
+          </div>
+
+          <div class="gap">
+            <nb-icon class="icon1 hint" icon="calendar-outline"></nb-icon>
+            <span class="text2 text-basic subtitle">{{this.getDatesGap()}}</span>
+          </div>
+
+          <div class="remove">
+            <nb-icon class="icon float-right btn-icon" icon="close-outline"></nb-icon>
+          </div>
+
+          <div class="divider"></div>
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

@@ -1,0 +1,281 @@
+:host {
+
+  width: calc(25% - 8px - 8px);
+  height: auto;
+  margin: 8px;
+  display: block;
+  
+  .heading {
+    margin: 0 0 4px 0;
+  }
+    
+  .space-component {
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 24px;
+    overflow: visible;
+    background-color: unset;
+  }
+    
+  .text {
+    margin: 0 4px 0 0;
+  }
+    
+  .text1 {
+    margin: 0 4px 0 0;
+  }
+    
+  .space-component1 {
+    height: auto;
+    min-height: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+    
+  .text2 {
+    margin: 0 4px 0 0;
+  }
+    
+  .space-component2 {
+    height: auto;
+    min-height: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+    
+  .space-component3 {
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+    
+  .space-component4 {
+    height: 14px;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: var(--bg-disabled-color);
+    margin-bottom: 25px;
+
+    .live-trips {
+      height: 100%;
+      flex-basis: 40%;
+      background-color: var(--color-primary-default);
+    }
+
+    .completed-trips {
+      height: 100%;
+      flex-basis: 20%;
+      background-color: var(--color-success-default);
+    }
+
+    .late-trips {
+      height: 100%;
+      flex-basis: 10%;
+      background-color: var(--color-warning-default);
+    }
+
+    .failed-trips {
+      height: 100%;
+      flex-basis: 5%;
+      background-color: var(--color-danger-default);
+    }
+
+    .other-trips {
+      
+    }
+  }
+    
+  .text3 {
+    margin: 0 4px 0 0;
+  }
+    
+  .text4 {
+    margin: 0 4px 0 0;
+  }
+    
+  .space-component5 {
+    height: auto;
+    min-height: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+    
+  .text5 {
+    margin: 0 4px 0 0;
+  }
+    
+  .text6 {
+    margin: 0 4px 0 0;
+  }
+    
+  .space-component6 {
+    height: auto;
+    min-height: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+    
+  .space-component7 {
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+    margin: 10px 0;
+  }
+    
+  .text7 {
+    margin: 0 4px 0 0;
+  }
+    
+  .text8 {
+    margin: 0 4px 0 0;
+  }
+    
+  .space-component8 {
+    height: auto;
+    min-height: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+    
+  .text9 {
+    margin: 0 4px 0 0;
+  }
+    
+  .text10 {
+    margin: 0 4px 0 0;
+  }
+    
+  .space-component9 {
+    height: auto;
+    min-height: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+    
+  .space-component10 {
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+    margin: 10px 0;
+  }
+    
+  .space-component11 {
+    height: auto;
+    min-height: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+    
+  .space-component12 {
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    padding: 17px 24px 84px 24px;
+    overflow: visible;
+    background-color: unset;
+  }
+    
+  .space-component13 {
+    height: auto;
+    min-height: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+    
+  .card {
+    width: 100%;
+    height: 100%;
+    
+    > nb-card-body {
+      padding: 0;
+    }
+    
+    > nb-card-footer {
+      padding: 0;
+    }
+  }
+  
+}

@@ -1,0 +1,13 @@
+<nb-tabset class="tabs">
+  <nb-tab tabTitle="Assigned" class="slot">
+    <assigned-vehicles-header></assigned-vehicles-header>
+    <assigned-vehicle *ngFor="let vehicle of this.vehiclesService.getAssignedVehicles()" [vehicle]="vehicle"></assigned-vehicle>
+  </nb-tab>
+
+  <nb-tab tabTitle="Not Assigned" class="slot">
+    <div class="space space-component19">
+      <not-assigned-vehicles-header></not-assigned-vehicles-header>
+      <assigned-vehicle *ngFor="let vehicle of this.vehiclesService.getNotAssignedVehicles()" [vehicle]="vehicle"></assigned-vehicle>
+    </div>
+  </nb-tab>
+</nb-tabset>

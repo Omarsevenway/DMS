@@ -1,0 +1,47 @@
+<nb-card (click)="this.redirectToDetails()" class="card" >
+  <nb-card-body>
+    <div class="space space-component12">
+      <div class="space space-component">
+        <nb-checkbox class="checkbox" status="basic"></nb-checkbox>
+      </div>
+      <div class="space space-component3">
+        <div class="space space-component1">
+          <img class="image" [src]="this.getImageSource()">
+        </div>
+        <div class="space space-component2">
+          <h6 class="heading text-basic">{{this.vehicle.name}}</h6>
+          <span class="text text-hint caption-2">{{this.vehicle.vin}}</span>
+        </div>
+      </div>
+      <div class="space space-component4">
+        <span class="text1 text-hint caption-2">{{this.vehicle.type}}</span>
+      </div>
+      <div class="space space-component5">
+        <vehicle-status [status]="this.vehicle.status"></vehicle-status>
+      </div>
+      <div class="space space-component8">
+        <div class="space space-component6">
+          <label class="text2 text-hint label">{{this.vehicle.condition.overview}}%</label>
+        </div>
+        <div class="space space-component7">
+          <nb-progress-bar class="progress-bar size-xl-tiny" [status]=this.getStatus(this.vehicle.condition.overview)
+                           size="tiny" [value]="this.vehicle.condition.overview"></nb-progress-bar>
+        </div>
+      </div>
+      <div class="space space-component9">
+        <nb-icon *ngIf="battery && engine" class="icon disabled" icon="slash"></nb-icon>
+        <nb-icon *ngIf="!battery" class="error-alert icon danger" icon="alert-triangle-outline"></nb-icon>
+        <nb-icon *ngIf="!engine" class="error-alert icon1 danger" icon="activity"></nb-icon>
+      </div>
+      <div class="space space-component10">
+        <button nbButton class="button size-xl-small" appearance="filled" status="basic">
+          <nb-icon class="icon btn-icon" icon="pin"></nb-icon>
+          <span>live view</span>
+        </button>
+      </div>
+      <div class="space space-component11">
+        <nb-icon class="icon1 hint" icon="more-vertical"></nb-icon>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

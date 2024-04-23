@@ -1,0 +1,97 @@
+<div class="space space-component20">
+  <div class="space space-component2">
+    <div class="space space-component">
+      <h5 class="heading text-basic">Real Time Data</h5>
+      <div class="divider"></div>
+      <nb-icon class="icon basic" icon="calendar-outline"></nb-icon>
+      <span class="text text-basic subtitle-2">{{currentDate}}</span>
+      <nb-icon class="icon1 basic" icon="clock-outline"></nb-icon>
+      <span class="text1 text-basic subtitle-2">{{currentTime}}</span>
+    </div>
+    <div class="space space-component1">
+      <button nbButton class="button size-xl-medium" appearance="outline" status="basic">
+        <nb-icon class="icon btn-icon" icon="layout"></nb-icon>
+        <span>widgets</span>
+      </button>
+      <button nbButton class="button1 size-xl-medium" appearance="outline" status="basic">
+        <nb-icon class="icon btn-icon" icon="expand"></nb-icon>
+        <span>Button</span>
+      </button>
+    </div>
+  </div>
+  <div class="space space-component15">
+    <nb-card class="card indicator-card">
+      <nb-card-body>
+        <div class="space space-component3">
+          <nb-icon class="icon2 danger" icon="alert-triangle"></nb-icon>
+        </div>
+        <div class="space space-component4">
+          <h5 class="heading1 text-basic">5</h5>
+          <span class="text2 text-hint caption-2">Vehicles with Errors</span>
+        </div>
+      </nb-card-body>
+    </nb-card>
+    <nb-card class="card indicator-card">
+      <nb-card-body>
+        <div class="space space-component3">
+          <nb-icon class="icon basic" icon="analytics-outline"></nb-icon>
+        </div>
+        <div class="space space-component4">
+          <h5 class="heading text-basic">{{predictionStatus}}</h5>
+          <span class="text text-hint caption-2">Probability: {{probability}}%</span>
+        </div>
+      </nb-card-body>
+    </nb-card>    
+    <nb-card class="card indicator-card">
+      <nb-card-body>
+          <div class="space space-component3">
+            <nb-icon class="icon3 warning" icon="alert-circle"></nb-icon>
+          </div>
+          <div class="space space-component4">
+            <h5 class="heading2 text-basic">14</h5>
+            <span class="text3 text-hint caption-2">Vehicles with Warnings</span>
+          </div>
+      </nb-card-body>
+    </nb-card>
+    <nb-card class="card indicator-card">
+      <nb-card-body>
+          <div class="space space-component3">
+            <nb-icon class="icon4 danger" icon="alert-triangle"></nb-icon>
+          </div>
+          <div class="space space-component4">
+            <h5 class="heading3 text-basic">4</h5>
+            <span class="text4 text-hint caption-2">Deviation from a Route</span>
+          </div>
+      </nb-card-body>
+    </nb-card>
+    <nb-card class="card indicator-card">
+      <nb-card-body>
+          <div class="space space-component3">
+            <nb-icon class="icon5 warning" icon="alert-circle"></nb-icon>
+          </div>
+          <div class="space space-component4">
+            <h5 class="heading4 text-basic">34</h5>
+            <span class="text5 text-hint caption-2">Being Late</span>
+          </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="space space-component17">
+    <app-expenses></app-expenses>
+    <app-vehicles-condition></app-vehicles-condition>
+    <div class="space space-component16">
+      <app-traffic-jam></app-traffic-jam>
+      <app-accidents></app-accidents>
+    </div>
+  </div>
+  <div class="space space-component18">
+    <app-warnings></app-warnings>
+    <app-trips></app-trips>
+    <app-trips-perf></app-trips-perf>
+  </div>
+  <div class="space space-component19">
+    <app-service></app-service>
+    <app-driving-meter></app-driving-meter>
+    <app-criticals></app-criticals>
+  </div>
+</div>

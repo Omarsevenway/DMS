@@ -1,0 +1,20 @@
+@import 'themes';
+@import '~@nebular/theme/styles/globals';
+@import '~@uibakery/kit/styles.scss';
+@import 'responsive';
+
+$nb-enable-css-custom-properties: true;
+$nb-enabled-themes: (light);
+
+$nb-themes: nb-register-theme((
+  sidebar-shadow: 0 0.5rem 1rem 0 rgba(44, 51, 73, 0.1),
+  divider-color: var(--bg-disabled-color),
+  table-border-color: var(--bg-disabled-color),
+), light, light);
+
+@include nb-install() {
+  @include nb-theme-global();
+  @include install-bakery-styles();
+  @include install-responsive-styles();
+};
+/* You can add global styles to this file, and also import other style files */

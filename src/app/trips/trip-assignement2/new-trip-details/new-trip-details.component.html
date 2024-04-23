@@ -1,0 +1,162 @@
+<nb-card class="card" >
+  <nb-card-header>
+    <div class="space space-component">
+      <nb-icon class="icon hint large" icon="car"></nb-icon>
+      <h6 class="heading text-basic">Trip Parameters</h6>
+    </div>
+  </nb-card-header>
+
+  <nb-card-body>
+    <div class="space space-component22">
+      <div class="space space-component21">
+        <div class="space space-component1">
+          <h6 class="heading1 text-hint">1.</h6>
+          <h6 class="heading2 text-hint">DATES</h6>
+        </div>
+        <div class="space space-component4">
+          <div class="space space-component2">
+            <label class="text text-hint label">START DATE</label>
+            
+              <input [nbDatepicker]="datepicker13" nbInput class="datepicker size-xl-medium" placeholder="Enter Date" shape="rectangle" status="basic">
+              <nb-datepicker #datepicker13>
+              </nb-datepicker>
+            
+          </div>
+          <div class="space space-component3">
+            <label class="text1 text-disabled label">END  DATE</label>
+            
+              <input [nbDatepicker]="datepicker14" nbInput class="datepicker1 size-xl-medium" placeholder="Enter Date" shape="rectangle" status="basic">
+              <nb-datepicker #datepicker14>
+              </nb-datepicker>
+            
+          </div>
+        </div>
+        <div class="space space-component7">
+          <div class="space space-component5">
+            <label class="text2 text-hint label">START TIME</label>
+            <nb-select class="select size-xl-medium" placeholder="Select Time" status="basic">    
+                <nb-option value="option 1">1 AM</nb-option>    
+                <nb-option value="option 2">2 AM</nb-option>
+                <nb-option value="option 2">3 AM</nb-option>
+                <nb-option value="option 2">4 AM</nb-option>
+                <nb-option value="option 2">5 AM</nb-option>
+                <nb-option value="option 2">6 AM</nb-option>
+                <nb-option value="option 2">7 AM</nb-option>
+                <nb-option value="option 2">8 AM</nb-option>
+                <nb-option value="option 2">9 AM</nb-option>
+                <nb-option value="option 2">10 AM</nb-option>
+                <nb-option value="option 2">11 AM</nb-option>
+                <nb-option value="option 2">12 PM</nb-option>
+                <nb-option value="option 2">1 PM</nb-option>
+                <nb-option value="option 2">2 PM</nb-option>
+                <nb-option value="option 2">3 PM</nb-option>
+                <nb-option value="option 2">4 PM</nb-option>
+                <nb-option value="option 2">5 PM</nb-option>
+                <nb-option value="option 2">6 PM</nb-option>
+                <nb-option value="option 2">7 PM</nb-option>
+                <nb-option value="option 2">8 PM</nb-option>
+                <nb-option value="option 2">9 PM</nb-option>
+                <nb-option value="option 2">10 PM</nb-option>
+                <nb-option value="option 2">11 PM</nb-option>
+            </nb-select>
+          </div>
+          <div class="space space-component6">
+            <label class="text3 text-disabled label">END TIME</label>
+            
+            <nb-select class="select size-xl-medium" placeholder="Select Time" status="basic">    
+              <nb-option value="option 1">1 AM</nb-option>    
+                <nb-option value="option 2">2 AM</nb-option>
+                <nb-option value="option 2">3 AM</nb-option>
+                <nb-option value="option 2">4 AM</nb-option>
+                <nb-option value="option 2">5 AM</nb-option>
+                <nb-option value="option 2">6 AM</nb-option>
+                <nb-option value="option 2">7 AM</nb-option>
+                <nb-option value="option 2">8 AM</nb-option>
+                <nb-option value="option 2">9 AM</nb-option>
+                <nb-option value="option 2">10 AM</nb-option>
+                <nb-option value="option 2">11 AM</nb-option>
+                <nb-option value="option 2">12 PM</nb-option>
+                <nb-option value="option 2">1 PM</nb-option>
+                <nb-option value="option 2">2 PM</nb-option>
+                <nb-option value="option 2">3 PM</nb-option>
+                <nb-option value="option 2">4 PM</nb-option>
+                <nb-option value="option 2">5 PM</nb-option>
+                <nb-option value="option 2">6 PM</nb-option>
+                <nb-option value="option 2">7 PM</nb-option>
+                <nb-option value="option 2">8 PM</nb-option>
+                <nb-option value="option 2">9 PM</nb-option>
+                <nb-option value="option 2">10 PM</nb-option>
+                <nb-option value="option 2">11 PM</nb-option>
+            </nb-select>
+            
+          </div>
+        </div>
+        <div class="space space-component9">
+          <div class="space space-component8">
+            <h6 class="heading3 text-hint">2.</h6>
+            <h6 class="heading4 text-hint">CARGO&ROUTE</h6>
+          </div>
+        </div>
+        <div class="space space-component11">
+          <div class="space space-component10">
+            <label class="text4 text-hint label">TYPE OF CARGO</label>
+            <nb-select class="select1 size-xl-medium" placeholder="" status="basic">    
+                <nb-option value="option 1">Gas</nb-option>    
+                <nb-option value="option 2">Oil</nb-option>
+            </nb-select>
+          </div>
+        </div>
+        <div class="space space-component14">
+          <div class="space space-component12">
+            <label class="text5 text-hint label">DEPARTURE CITY</label>
+            <input type="text" nbInput class="select2 size-xl-medium">
+          </div>
+          <div class="space space-component13">
+            <label class="text6 text-hint label">ARRIVAL CITY</label>
+            <input type="text" nbInput class="select2 size-xl-medium">
+          </div>
+        </div>
+        <div class="space space-component16">
+          <div class="space space-component15">
+            <h6 class="heading5 text-hint">3.</h6>
+            <h6 class="heading6 text-hint">VEHICLE</h6>
+          </div>
+        </div>
+        <div class="space space-component20">
+          <div class="space space-component17">
+            <label class="text7 text-hint label">VEHICLE TYPE</label>
+            <nb-radio-group class="radio" name="15851713060990.10801050797554645" status="primary">    
+                <nb-radio value="Truck">Truck</nb-radio>    
+                <nb-radio value="Van">Van</nb-radio>    
+                <nb-radio value="Car">Car</nb-radio>
+            </nb-radio-group>
+          </div>
+          <div class="space space-component19">
+            <label class="text8 text-hint label">SELECT VEHICLE</label>
+            <nb-select class="select4 size-xl-medium" placeholder="select" status="basic">    
+                <nb-option value="option 1">AA 1235</nb-option>    
+                <nb-option value="option 2">BB 2515</nb-option>
+            </nb-select>
+            <nb-checkbox class="checkbox" status="primary">Only Available</nb-checkbox>
+            <div class="space space-component18">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+
+  <nb-card-footer>
+    <div class="space space-component23">
+      <button nbButton class="button size-xl-medium" appearance="filled" status="basic" routerLink="/Trips/scheduleTrip">
+        <nb-icon class="icon btn-icon" icon="close-outline"></nb-icon>
+        <span>cancel</span>
+      </button>
+      <button nbButton class="button1 size-xl-medium" appearance="filled" status="primary">
+        <nb-icon class="icon btn-icon" icon="credit-card"></nb-icon>
+        <span>calculate</span>
+      </button>
+    </div>
+  </nb-card-footer>
+</nb-card>

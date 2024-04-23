@@ -1,0 +1,308 @@
+:host {
+
+  .heading {
+    margin: 0 20px;
+  }
+
+  .divider {
+    width: 1px;
+    height: 100%;
+    margin: 0;
+    background-color: var(--bg-disabled-color);
+  }
+
+  .select {
+    margin: 0 0 0 20px;
+    width: auto;
+  }
+
+  .datepicker {
+    margin: 0 0 0 12px;
+    width: 312px;
+  }
+
+  .space-component {
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .button {
+    margin: 0 8px 0 0;
+    width: auto;
+    flex-direction: row;
+    > nb-icon.btn-icon.icon {
+      margin: 0 .75rem 0 0;
+    }
+
+    span {
+      display: inline;
+    }
+
+    > nb-icon {
+      display: inline;
+    }
+  }
+
+  .button1 {
+    margin: 0 16px 0 0;
+    width: auto;
+    flex-direction: row;
+    > nb-icon.btn-icon.icon {
+      margin: 0;
+    }
+
+    span {
+      display: none;
+    }
+
+    > nb-icon {
+      display: inline;
+    }
+  }
+
+  .space-component1 {
+    height: auto;
+    min-height: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-end;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component2 {
+    height: 64px;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .heading1 {
+    margin: 0;
+  }
+
+  .text {
+    margin: 0 4px 0 0;
+  }
+
+  .space-component3 {
+    height: 56px;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component5 {
+    height: 80px;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 12px 0;
+    overflow: visible;
+  }
+
+  .heading2 {
+    margin: 0;
+  }
+
+  .text1 {
+    margin: 0 4px 0 0;
+  }
+
+  .space-component6 {
+    height: 56px;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .icon-space {
+    height: 52px;
+    width: 52px;
+    border: 0 solid white;
+    border-radius: 50%;
+    background-color: #ecf6f4;
+    border-right: 26px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .space-component8 {
+    height: 80px;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 12px 0;
+    overflow: visible;
+  }
+
+  .heading3 {
+    margin: 0;
+  }
+
+  .text2 {
+    margin: 0 4px 0 0;
+  }
+
+  .space-component9 {
+    height: 56px;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component11 {
+    height: 80px;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 12px 0;
+    overflow: visible;
+  }
+
+  .heading4 {
+    margin: 0;
+  }
+
+  .text3 {
+    margin: 0 4px 0 0;
+  }
+
+  .space-component12 {
+    height: 56px;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .general-info-container {
+    margin: 8px;
+    height: 80px;
+    padding:  12px 24px;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-be;
+    overflow: visible;
+  }
+
+  .space-component15 {
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component16 {
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component17 {
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component18 {
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component19 {
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 8px;
+    overflow: visible;
+    background-color: unset;
+  }
+
+  .space-component20 {
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: visible;
+    background-color: unset;
+  }
+
+}

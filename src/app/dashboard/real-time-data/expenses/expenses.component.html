@@ -1,0 +1,41 @@
+<nb-card class="card" >
+  <nb-card-body>
+    <div class="space space-component12">
+      <div class="space space-component">
+        <h6 class="heading text-basic">Total Vehicles</h6>
+      </div>
+      <div class="space space-component11">
+        <div echarts [options]="options" class="echart" (chartInit)="onChartInit($event)"></div>
+        <div class="space space-component10">
+          <div class="space space-component3">
+            <div class="divider"></div>
+            <div class="space space-component2">
+              <span class="text subtitle text-primary">En Route</span>
+              <div class="space space-component1">
+                <span class="text1 text-hint subtitle">134</span>
+              </div>
+            </div>
+          </div>
+          <div class="space space-component6">
+            <div class="divider1"></div>
+            <div class="space space-component5">
+              <span class="text2 subtitle text-success">Available</span>
+              <div class="space space-component4">
+                <span class="text3 text-hint subtitle">45</span>
+              </div>
+            </div>
+          </div>
+          <div class="space space-component9">
+            <div class="divider2"></div>
+            <div class="space space-component8">
+              <span class="text4 subtitle text-warning">Out of Service</span>
+              <div class="space space-component7">
+                <span class="text5 text-hint subtitle">15</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

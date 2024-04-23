@@ -1,0 +1,39 @@
+<nb-card class="card" >
+  <nb-card-body>
+    <div class="space space-component8">
+      <div class="space space-component">
+        <nb-checkbox class="checkbox" status="basic"></nb-checkbox>
+      </div>
+      <div class="space space-component1">
+        <event-type [status]="event.status"></event-type>
+      </div>
+      <div class="space space-component2">
+        <span class="text text-basic subtitle">{{event.message}}</span>
+      </div>
+      <div class="space space-component3">
+        <nb-icon class="icon hint" icon="calendar-outline"></nb-icon>
+        <span class="text1 text-basic subtitle">{{formatDate(event.date)}}</span>
+        <span class="text2 text-hint subtitle">{{formatTime(event.date)}}</span>
+      </div>
+      <div class="space space-component6">
+        <div class="space space-component4">
+          <img class="image" src="./assets/images/Group@2x9.png">
+        </div>
+        <div class="space space-component5">
+          <span class="text3 text-basic subtitle">{{event.vehicle}}</span>
+          <nb-icon class="icon1 basic" icon="chevron-right"></nb-icon>
+        </div>
+      </div>
+      <div class="space space-component7">
+        <button nbButton class="button size-xl-medium" appearance="filled" status="control">
+          <nb-icon class="icon btn-icon" icon="star-outline"></nb-icon>
+          <span>Button</span>
+        </button>
+        <button nbButton class="button1 size-xl-medium" appearance="filled" status="control">
+          <nb-icon class="icon btn-icon" icon="more-vertical"></nb-icon>
+          <span>Button</span>
+        </button>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>
